@@ -36,10 +36,10 @@ export default function ContactUs() {
             </h3>
             <p className="mb-4  opacity-70 text-lg font-medium">
               We genuinely care about you and wellbeing. <br /> Let us know how
-              we can serve you better. <br /> If you'd like to know more about
-              my work or proccess feel free <br /> to get touch.Email us with
-              any questions or inquiries. <br /> We would happy to answer your
-              questions and try to response to your <br /> questions and
+              we can serve you better. <br /> If you&apos;d like to know more
+              about my work or proccess feel free <br /> to get touch.Email us
+              with any questions or inquiries. <br /> We would happy to answer
+              your questions and try to response to your <br /> questions and
               inquiries as soon as possible.
             </p>
           </motion.div>

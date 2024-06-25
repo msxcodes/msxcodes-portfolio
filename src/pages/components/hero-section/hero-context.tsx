@@ -48,10 +48,10 @@ const HeroContent = () => {
           className="text-xs md:text-[1rem]  text-gray-400 font-medium my-5 max-w-[600px]"
         >
           Hi, Myself Mohit Singh <br /> Welcome to my corrner of the internet.
-          I,m glad that you're here! <br className="hidden md:block" /> I&apos;m
-          a developer based in India with experience in JavaScript, and
+          I,m glad that you&apos;re here! <br className="hidden md:block" />{" "}
+          I&apos;m a developer based in India with experience in JavaScript, and
           expertise in frameworks like NextJs and ReactJs. For backend Node.js
-          and Express.js. <br /> Let's work together to bring your ideas to
+          and Express.js. <br /> Let&apos;s work together to bring your ideas to
           life!
         </motion.p>
         <motion.a
