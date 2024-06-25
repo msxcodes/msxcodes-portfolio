@@ -47,18 +47,19 @@ export default function ProjectCard({
               <Image src={imgSrc} alt="" className="size-full  object-cover" />
             </span>
             <div className="mt-2">
-              {tech_stack.map((data, index: number) => {
-                return (
-                  <span
-                    key={index}
-                    style={{ color: `${data.color}` }}
-                    className="opacity-70 text-xs font-semibold"
-                  >
-                    {data.title}
-                    {tech_stack.length != index ? " " : null}
-                  </span>
-                );
-              })}
+              {tech_stack &&
+                tech_stack.map((data, index: number) => {
+                  return (
+                    <span
+                      key={index}
+                      style={{ color: `${data.color}` }}
+                      className="opacity-70 text-xs font-semibold"
+                    >
+                      {data.title}
+                      {tech_stack.length != index ? " " : null}
+                    </span>
+                  );
+                })}
             </div>
           </div>
         </Link>
