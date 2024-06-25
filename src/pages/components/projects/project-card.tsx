@@ -6,10 +6,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { slideInFromLeft } from "@/utils/motions/montion";
 
+interface Itech {
+  title: string;
+  color: string;
+}
 interface ProjectCardProps {
   title: string;
   linkTitle: string;
-  tech_stack: object[];
+  tech_stack: Itech[];
   imgSrc: any;
   link: string;
   des: string;
@@ -43,7 +47,7 @@ export default function ProjectCard({
               <Image src={imgSrc} alt="" className="size-full  object-cover" />
             </span>
             <div className="mt-2">
-              {tech_stack.map((data: any, index: number) => {
+              {tech_stack.map((data, index: number) => {
                 return (
                   <span
                     key={index}
@@ -51,7 +55,7 @@ export default function ProjectCard({
                     className="opacity-70 text-xs font-semibold"
                   >
                     {data.title}
-                    {data.length != index ? " " : null}
+                    {tech_stack.length != index ? " " : null}
                   </span>
                 );
               })}

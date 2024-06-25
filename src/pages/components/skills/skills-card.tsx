@@ -4,11 +4,17 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
+interface IData {
+  id: number;
+  skill_name: string;
+  Image: string;
+}
+
 export default function ThreeDCardDemo({
   data,
   title,
 }: {
-  data: object[];
+  data: IData[];
   title: string;
 }) {
   return (
@@ -22,7 +28,7 @@ export default function ThreeDCardDemo({
         </CardItem>
 
         <div className="flex flex-wrap items-center mt-4 gap-2 justify-center">
-          {data.map((item: any) => {
+          {data.map((item) => {
             return (
               <CardItem
                 key={item.id}
