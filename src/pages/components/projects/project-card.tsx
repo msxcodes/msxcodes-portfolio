@@ -9,7 +9,7 @@ import { slideInFromLeft } from "@/utils/motions/montion";
 interface ProjectCardProps {
   title: string;
   linkTitle: string;
-  tech_stack: any;
+  tech_stack: object[];
   imgSrc: any;
   link: string;
   des: string;

@@ -8,7 +8,7 @@ export default function ThreeDCardDemo({
   data,
   title,
 }: {
-  data: any;
+  data: object[];
   title: string;
 }) {
   return (
