@@ -16,7 +16,7 @@ interface ProjectCardProps {
   time: number;
 }
 
-export function ProjectCard({
+export default function ProjectCard({
   title,
   des,
   tech_stack,

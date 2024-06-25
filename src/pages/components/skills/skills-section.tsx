@@ -8,11 +8,11 @@ import {
   Other_skill,
 } from "@/utils/constants/constants";
 import React from "react";
-import { SkillsHeader } from "./skills-header";
+import SkillsHeader from "./skills-header";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/utils/motions/montion";
-import { ThreeDCardDemo } from "./skills-card";
+import ThreeDCardDemo from "./skills-card";
 
 const Skills = () => {
   return (

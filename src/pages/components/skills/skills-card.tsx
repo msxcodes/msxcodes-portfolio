@@ -4,7 +4,13 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
-export function ThreeDCardDemo({ data, title }: { data: any; title: string }) {
+export default function ThreeDCardDemo({
+  data,
+  title,
+}: {
+  data: any;
+  title: string;
+}) {
   return (
     <CardContainer className="inter-var">
       <CardBody className="relative group/card  hover:shadow-2xl hover:shadow-purple-500/[0.2] transition-all duration-300 bg-black/20 border-purple-800/50  w-auto sm:w-[30rem] h-auto rounded-xl py-6 px-3 md:p-6 border">

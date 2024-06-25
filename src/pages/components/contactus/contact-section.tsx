@@ -7,7 +7,7 @@ import {
   slideInFromTop,
 } from "@/utils/motions/montion";
 import ContactInput from "./contact-input";
-import { ContactHeader } from "./contact-header";
+import ContactHeader from "./contact-header";
 import { HiSparkles } from "react-icons/hi2";
 import { Button } from "@/components/ui/moving-border-btn";
 

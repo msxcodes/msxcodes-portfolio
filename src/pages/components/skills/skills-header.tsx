@@ -8,7 +8,7 @@ import {
 } from "@/utils/motions/montion";
 import { HiSparkles } from "react-icons/hi2";
 
-export const SkillsHeader = () => {
+export default function SkillsHeader() {
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
       <motion.div
@@ -34,4 +34,4 @@ export const SkillsHeader = () => {
       </motion.div>
     </div>
   );
-};
+}
