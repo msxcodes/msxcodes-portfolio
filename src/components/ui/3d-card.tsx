@@ -131,7 +131,7 @@ export const CardItem = ({
   };
   useEffect(() => {
     handleAnimations();
-  }, [isMouseEntered, handleAnimations]);
+  }, [isMouseEntered]);
 
   return (
     <Tag
