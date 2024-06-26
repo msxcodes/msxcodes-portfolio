@@ -19,6 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/glaxy.png?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
