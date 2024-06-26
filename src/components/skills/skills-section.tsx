@@ -55,14 +55,14 @@ const Skills = () => {
 
       <motion.div
         variants={slideInFromLeft(1)}
-        className="z-50 absolute bottom-[170px] left-0 md:left-[5%] md:bottom-[0]"
+        className="z-50 absolute bottom-[220px] left-0 md:left-[5%] md:bottom-[0]"
       >
         <ThreeDCardDemo data={Frontend_skillCard} title={"Frontend Skills"} />
       </motion.div>
 
       <motion.div
         variants={slideInFromRight(1)}
-        className="z-50 absolute bottom-[-150px] right-0 md:right-[5%] md:bottom-[0]"
+        className="z-50 absolute bottom-[-100px] right-0 md:right-[5%] md:bottom-[0]"
       >
         <ThreeDCardDemo data={Backend_skillCard} title={"Backend & Tools"} />
       </motion.div>

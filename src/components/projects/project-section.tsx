@@ -10,11 +10,11 @@ const Projects = () => {
     <motion.section
       initial="hidden"
       animate="visible"
-      className="flex flex-col items-center justify-center py-20 min-h-max pt-36"
+      className="flex flex-col items-center justify-center py-20 min-h-max pt-28"
       id="projects"
     >
       <ProjectHeader />
-      <div className="h-max my-12 py-12 justify-center w-full flex flex-col gap-36 md:gap-0 md:flex-row items-center">
+      <div className="h-max my-2 py-12 justify-center w-full flex flex-col gap-36 md:gap-0 md:flex-row items-center">
         {projectData.map((data: any) => {
           return (
             <ProjectCard

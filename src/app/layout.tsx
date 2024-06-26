@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/header";
 import StarsCanvas from "@/components/common/star-background";
-import Footer from "@/components/footer/footer";
 import { NextUIProvider } from "@nextui-org/react";
 import { Toaster } from "react-hot-toast";
 

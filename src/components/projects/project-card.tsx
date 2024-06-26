@@ -32,7 +32,7 @@ export default function ProjectCard({
   return (
     <motion.div variants={slideInFromLeft(time)}>
       <PinContainer title={linkTitle}>
-        <Link href={link}>
+        <Link href={link} target="_blank">
           <div className="flex basis-full flex-col p-1 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-max ">
             <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-white/80">
               {title}

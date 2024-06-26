@@ -44,10 +44,10 @@ export default function Header() {
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src="/NavLogo.png"
+            src="/glaxy.png"
             alt="logo"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
             className="cursor-pointer hover:animate-slowspin hidden md:block"
           />
 
