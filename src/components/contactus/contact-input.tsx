@@ -99,7 +99,7 @@ export default function ContactInput() {
           <Button
             borderRadius="1rem"
             disabled={loading && true}
-            className="bg-transparent text-white text-[0.9rem]  border-[#7042f88b] hover:scale-110 transition-all duration-300 gradient-text"
+            className="bg-transparent text-white text-[0.9rem]  border-[#7042f88b]  gradient-text"
           >
             {loading ? (
               <>
@@ -113,7 +113,9 @@ export default function ContactInput() {
                 </span>
               </>
             ) : (
-              "Send Message"
+              <span className="size-full flex items-center justify-center hover:font-semibold transition-all duration-300">
+                Send Message
+              </span>
             )}
           </Button>
         </div>

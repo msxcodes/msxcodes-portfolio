@@ -10,7 +10,7 @@ import { HiSparkles } from "react-icons/hi2";
 
 export default function ProjectHeader() {
   return (
-    <div className="w-full h-auto flex flex-col items-center justify-center">
+    <div className="w-full h-auto flex flex-col items-center justify-center ">
       <motion.div
         variants={slideInFromTop}
         className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"

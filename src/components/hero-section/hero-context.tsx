@@ -62,9 +62,11 @@ const HeroContent = () => {
         >
           <Button
             borderRadius="1rem"
-            className="bg-transparent text-white text-[0.9rem]  border-[#7042f88b] hover:scale-110 transition-all duration-300 gradient-text"
+            className=" text-white text-[0.9rem]  border-[#7042f88b] transition-all duration-300 gradient-text"
           >
-            Download CV
+            <span className="size-full flex items-center justify-center hover:font-semibold transition-all duration-300">
+              Download CV
+            </span>
           </Button>
         </motion.a>
       </div>

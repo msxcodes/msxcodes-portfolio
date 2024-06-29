@@ -17,7 +17,7 @@ export default function ContactUs() {
       id="contact"
       initial="hidden"
       animate="visible"
-      className="flex relative flex-col items-center justify-center md:px-20 mt-16 md:mt-40 w-full pt-24 h-[90vh]"
+      className="flex relative flex-col items-center justify-center md:px-20 mt-16 md:mt-0 w-full pt-24 h-[90vh]"
     >
       <div className="z-50 flex">
         <ContactHeader />

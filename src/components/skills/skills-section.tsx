@@ -20,7 +20,7 @@ const Skills = () => {
       initial="hidden"
       animate="visible"
       id="skills"
-      className="flex flex-col items-center py-16 md:py-0 md:justify-center md:gap-3  relative z-50 h-screen"
+      className="flex flex-col items-center py-16 md:py-0 md:justify-center md:gap-3 relative z-50 h-screen"
       style={{ transform: "scale(0.9" }}
     >
       <SkillsHeader />

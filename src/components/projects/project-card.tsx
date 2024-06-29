@@ -30,9 +30,12 @@ export default function ProjectCard({
   time,
 }: ProjectCardProps) {
   return (
-    <motion.div variants={slideInFromLeft(time)}>
+    <motion.div
+      className="w-max h-max md:mb-32 "
+      variants={slideInFromLeft(time)}
+    >
       <PinContainer title={linkTitle}>
-        <Link href={link} target="_blank">
+        <Link href={link} target="_blank" className="size-full">
           <div className="flex basis-full flex-col p-1 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-max ">
             <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-white/80">
               {title}

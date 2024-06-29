@@ -14,7 +14,7 @@ const Projects = () => {
       id="projects"
     >
       <ProjectHeader />
-      <div className="h-max my-2 py-12 justify-center w-full flex flex-col gap-36 md:gap-0 md:flex-row items-center">
+      <div className="h-max my-2 py-12 justify-center w-full flex flex-col flex-wrap gap-36 md:gap-0 md:flex-row items-center">
         {projectData.map((data: any) => {
           return (
             <ProjectCard
