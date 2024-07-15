@@ -52,31 +52,9 @@ export const projectData = [
     ],
     time: 0.5,
   },
+
   {
     id: 3,
-    title: "MaxMovie",
-    link: "https://max-movie.vercel.app",
-    linkTitle: "max-movie.vercel.app",
-    img: maxMovie,
-    des: "MaxMovie is a website where you can find wide range of movies. Build using nextjs and fetch data from api listed on TMDB.",
-    tech: [
-      {
-        color: "deepskyblue",
-        title: "#nextjs",
-      },
-      {
-        color: "cadetblue",
-        title: "#tailwindcss",
-      },
-      {
-        color: "#9cb2ff",
-        title: "#redux/toolkit",
-      },
-    ],
-    time: 0.8,
-  },
-  {
-    id: 4,
     title: "BlogX",
     link: "https://blogxweb.netlify.app",
     img: blogx,
@@ -93,6 +71,29 @@ export const projectData = [
       },
     ],
     time: 1.1,
+  },
+  {
+    id: 4,
+    title: "MaxMovie",
+    link: "https://max-movie.vercel.app",
+    linkTitle: "max-movie.vercel.app",
+    img: maxMovie,
+    des: "MaxMovie is a website where you can find wide range of movies. It is still under development",
+    tech: [
+      {
+        color: "deepskyblue",
+        title: "#nextjs",
+      },
+      {
+        color: "cadetblue",
+        title: "#tailwindcss",
+      },
+      {
+        color: "#9cb2ff",
+        title: "#redux/toolkit",
+      },
+    ],
+    time: 0.8,
   },
   {
     id: 5,
