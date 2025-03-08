@@ -28,7 +28,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
+        className={`${inter.className} bg-black overflow-y-scroll overflow-x-hidden`}
       >
         <NextUIProvider>
           <StarsCanvas />
