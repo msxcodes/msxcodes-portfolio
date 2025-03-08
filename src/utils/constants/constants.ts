@@ -1,10 +1,5 @@
 export const SocialHandles = [
   {
-    name: "GitHub",
-    src: "/socials/github-icon.svg",
-    link: "https://github.com/msxcodes",
-  },
-  {
     name: "Twitter",
     src: "/socials/x-icon.svg",
     link: "https://x.com/msxcodes",
@@ -21,7 +16,7 @@ export const SocialHandles = [
   },
 ];
 
-export const Frontend_skill = [
+export const LibrariesAndFrameworks = [
   {
     id: 1,
     skill_name: "NextJs",
@@ -32,7 +27,7 @@ export const Frontend_skill = [
   },
   {
     id: 2,
-    skill_name: "ReactJs",
+    skill_name: "ReactJs", 
     des: "JavaScript Library",
     Image: "/skills/react.png",
     width: 75,
@@ -48,14 +43,6 @@ export const Frontend_skill = [
   },
   {
     id: 4,
-    skill_name: "Type Script",
-    des: "Strongly Typed Programming Language",
-    Image: "/skills/ts.png",
-    width: 60,
-    height: 60,
-  },
-  {
-    id: 5,
     skill_name: "React Query",
     Image: "/skills/reactquery.png",
     des: "JavaScript Library",
@@ -63,7 +50,7 @@ export const Frontend_skill = [
     height: 70,
   },
   {
-    id: 6,
+    id: 5,
     skill_name: "Framer Motion",
     Image: "/skills/framer.png",
     des: "Powerful Motion Library",
@@ -71,161 +58,15 @@ export const Frontend_skill = [
     height: 65,
   },
   {
-    id: 7,
+    id: 6,
     skill_name: "Tailwind Css",
     Image: "/skills/tailwind.png",
     des: "CSS Framework",
     width: 80,
     height: 80,
   },
-
-  {
-    id: 8,
-    skill_name: "JavaScript",
-    Image: "/skills/js.png",
-    des: "Programming Language",
-    width: 55,
-    height: 55,
-  },
-  {
-    id: 9,
-    skill_name: "CSS",
-    Image: "/skills/css.png",
-    des: "Cascading Style Sheets",
-    width: 80,
-    height: 80,
-  },
-  {
-    id: 10,
-    skill_name: "Html5",
-    Image: "/skills/html.png",
-    des: "Hyper Text Markup Language",
-    width: 70,
-    height: 70,
-  },
-];
-export const Frontend_skillCard = [
-  {
-    id: 1,
-    skill_name: "NextJs",
-    Image: "/skills/next.png",
-  },
-  {
-    id: 2,
-    skill_name: "ReactJs",
-    Image: "/skills/react.png",
-  },
-  {
-    id: 3,
-    skill_name: "Redux",
-    Image: "/skills/redux.png",
-  },
-  {
-    id: 4,
-    skill_name: "Type Script",
-    Image: "/skills/ts.png",
-  },
-  {
-    id: 5,
-    skill_name: "React Query",
-    Image: "/skills/reactquery.png",
-  },
-  {
-    id: 6,
-    skill_name: "Framer Motion",
-    Image: "/skills/framer.png",
-  },
   {
     id: 7,
-    skill_name: "Tailwind Css",
-    Image: "/skills/tailwind.png",
-  },
-
-  {
-    id: 8,
-    skill_name: "JavaScript",
-    Image: "/skills/js.png",
-  },
-  {
-    id: 9,
-    skill_name: "CSS",
-    Image: "/skills/css.png",
-  },
-  {
-    id: 10,
-    skill_name: "Html5",
-    Image: "/skills/html.png",
-  },
-];
-
-export const Backend_skillCard = [
-  {
-    id: 1,
-    skill_name: "NodeJs",
-    Image: "/skills/node-js.png",
-  },
-  {
-    id: 2,
-    skill_name: "Express js",
-    Image: "/skills/express.png",
-  },
-  {
-    id: 3,
-    skill_name: "MongoDB",
-    Image: "/skills/mongodb.png",
-  },
-  {
-    id: 4,
-    skill_name: "My SQL",
-    Image: "/skills/mysql.png",
-  },
-  {
-    id: 5,
-    skill_name: "Git",
-    Image: "/skills/git.png",
-  },
-  {
-    id: 6,
-    skill_name: "GitHub",
-    Image: "/skills/gitwhite.png",
-  },
-  {
-    id: 7,
-    skill_name: "Vercel",
-    Image: "/skills/vercel-icon.svg",
-  },
-  {
-    id: 8,
-    skill_name: "Netlify",
-    Image: "/skills/netlify.png",
-  },
-  {
-    id: 9,
-    skill_name: "Postman",
-    Image: "/skills/postman.png",
-  },
-  {
-    id: 10,
-    skill_name: "Vs Code",
-    Image: "/skills/vscode.svg",
-  },
-  {
-    id: 11,
-    skill_name: "Android Studio",
-    Image: "/skills/as-icon.svg",
-  },
-];
-export const Backend_skill = [
-  {
-    id: 1,
-    skill_name: "NodeJs",
-    Image: "/skills/node-js.png",
-    des: "Runtime Environment",
-    width: 70,
-    height: 70,
-  },
-  {
-    id: 2,
     skill_name: "Express js",
     Image: "/skills/express.png",
     des: "NodeJs Framework",
@@ -233,42 +74,123 @@ export const Backend_skill = [
     height: 65,
   },
   {
-    id: 3,
-    skill_name: "MongoDB",
-    Image: "/skills/mongodb.png",
-    des: "DBMS",
-    width: 35,
-    height: 35,
-  },
-  {
-    id: 4,
-    skill_name: "My SQL",
-    Image: "/skills/mysql.png",
-    des: "DBMS",
+    id: 8,
+    skill_name: "NumPy",
+    Image: "/skills/numpy.svg",
+    des: "Scientific Computing Library",
     width: 65,
     height: 65,
   },
+  {
+    id: 9,
+    skill_name: "Pandas",
+    Image: "/skills/pandas.svg",
+    des: "Data Analysis Library",
+    width: 65,
+    height: 65,
+  },
+  {
+    id: 10,
+    skill_name: "Flutter",
+    Image: "/skills/flutter.png",
+    des: "UI Framework",
+    width: 65,
+    height: 65,
+  }
 ];
-export const Languages = [
+
+export const ProgrammingLanguages = [
   {
     id: 1,
-    skill_name: "C",
-    Image: "/skills/c.png",
-    des: "Programing Language",
-    width: 70,
-    height: 70,
+    skill_name: "JavaScript",
+    Image: "/skills/js.png",
+    des: "Programming Language",
+    width: 55,
+    height: 55,
   },
   {
     id: 2,
-    skill_name: "C++",
-    Image: "/skills/c++.png",
-    des: "Programing Language",
+    skill_name: "Type Script",
+    des: "Typed Programming Language",
+    Image: "/skills/ts.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    id: 3,
+    skill_name: "C",
+    Image: "/skills/c.png",
+    des: "Programming Language",
     width: 70,
     height: 70,
   },
+  {
+    id: 4,
+    skill_name: "C++",
+    Image: "/skills/c++.png",
+    des: "Programming Language",
+    width: 70,
+    height: 70,
+  },
+  {
+    id: 5,
+    skill_name: "Python",
+    Image: "/skills/python.png",
+    des: "Programming Language",
+    width: 70,
+    height: 70,
+  },
+  {
+    id: 6,
+    skill_name: "Dart",
+    Image: "/skills/dart.png",
+    des: "Programming Language",
+    width: 70,
+    height: 70,
+  },
+  {
+    id: 7,
+    skill_name: "MySQL",
+    Image: "/skills/mysql.png",
+    des: "Database System",
+    width: 70,
+    height: 70,
+  },
+  {
+    id: 8,
+    skill_name: "MongoDB",
+    Image: "/skills/mongodb.png",
+    des: "Database System",
+    width: 70,
+    height: 70,
+  },
+  {
+    id: 9,
+    skill_name: "NodeJS",
+    Image: "/skills/node-js.png",
+    des: "Runtime Environment",
+    width: 70,
+    height: 70,
+  },
+  {
+    id: 10,
+    skill_name: "HTML",
+    Image: "/skills/html.png",
+    des: "Markup Language",
+    width: 70,
+    height: 70,
+  },
+  {
+    id: 11,
+    skill_name: "CSS",
+    Image: "/skills/css.png",
+    des: "Style Sheet Language",
+    width: 70,
+    height: 70,
+  }
 ];
 
-export const Other_skill = [
+export const DeveloperTools = [
   {
     id: 1,
     skill_name: "Git",
@@ -281,15 +203,16 @@ export const Other_skill = [
     id: 2,
     skill_name: "GitHub",
     Image: "/skills/gitwhite.png",
-    des: "Tool",
+    des: "Code Repository Platform",
     width: 65,
     height: 65,
   },
+
   {
     id: 3,
     skill_name: "Vercel",
     Image: "/skills/vercel-icon.svg",
-    des: "Cloud Platform",
+    des: "Deployment Platform",
     width: 75,
     height: 75,
   },
@@ -297,7 +220,7 @@ export const Other_skill = [
     id: 4,
     skill_name: "Netlify",
     Image: "/skills/netlify.png",
-    des: "Cloud Platform",
+    des: "Deployment Platform",
     width: 80,
     height: 80,
   },
@@ -305,13 +228,13 @@ export const Other_skill = [
     id: 5,
     skill_name: "Postman",
     Image: "/skills/postman.png",
-    des: "API Platform",
+    des: "API Testing Tool",
     width: 75,
     height: 75,
   },
   {
     id: 6,
-    skill_name: "Vs Code",
+    skill_name: "VS Code",
     Image: "/skills/vscode.svg",
     des: "Code Editor",
     width: 75,
@@ -321,8 +244,16 @@ export const Other_skill = [
     id: 7,
     skill_name: "Android Studio",
     Image: "/skills/as-icon.svg",
-    des: "Code Editor",
+    des: "IDE for Android",
     width: 75,
     height: 75,
   },
+  {
+    id: 8,
+    skill_name: "AWS",
+    Image: "/skills/aws.png",
+    des: "Cloud Service",
+    width: 75,
+    height: 75,
+  }
 ];

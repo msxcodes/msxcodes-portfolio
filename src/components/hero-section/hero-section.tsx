@@ -3,19 +3,21 @@ import HeroContent from "./hero-context";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col min-h-screen w-full overflow-hidden" id="about-me">
-      {/* Background Video with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/80 to-[#120E16] z-10" />
-        <video
-          autoPlay
-          muted
-          loop
-          className="rotate-180 w-full h-full object-cover scale-110"
-        >
-          <source src="/blackhole.webm" type="video/webm" />
-        </video>
-      </div>
+    <section
+      className="relative py-16 md:py-0 flex flex-col min-h-screen w-full overflow-hidden"
+      id="about-me"
+    >
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="rotate-180 absolute 
+          top-[-200px] sm:top-[-150px] md:top-[-250px] lg:top-[-350px] xl:top-[-400px]
+          opacity-40 h-[35%] md:w-full md:h-full object-cover"
+      >
+        <source src="/blackhole.webm" type="video/webm" />
+      </video>
       <HeroContent />
     </section>
   );

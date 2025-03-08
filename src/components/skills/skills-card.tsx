@@ -1,51 +1,32 @@
-"use client";
+import { motion } from "framer-motion";
 
-import Image from "next/image";
-import React from "react";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-
-interface IData {
-  id: number;
+interface SkillCardProps {
   skill_name: string;
   Image: string;
+  des: string;
 }
 
-export default function ThreeDCardDemo({
-  data,
-  title,
-}: {
-  data: IData[];
-  title: string;
-}) {
+const SkillCard = ({ skill_name, Image, des }: SkillCardProps) => {
   return (
-    <CardContainer className="inter-var">
-      <CardBody className="relative group/card  hover:shadow-2xl hover:shadow-purple-500/[0.2] transition-all duration-300 bg-black/20 border-purple-800/50  w-auto sm:w-[30rem] h-auto rounded-xl py-6 px-3 md:p-6 border">
-        <CardItem
-          translateZ="50"
-          className="text-xl font-bold text-center w-full text-[#b49bff]"
-        >
-          {title}
-        </CardItem>
-
-        <div className="flex flex-wrap items-center mt-4 gap-2 justify-center">
-          {data &&
-            data.map((item) => {
-              return (
-                <CardItem
-                  key={item.id}
-                  as="p"
-                  translateZ="60"
-                  className="border p-1 px-2 items-center border-slate-800 rounded-full text-sm max-w-sm mt-2 flex text-white/90 gap-2"
-                >
-                  <span>
-                    <Image src={item.Image} alt="icon" width={12} height={12} />
-                  </span>
-                  {item.skill_name}
-                </CardItem>
-              );
-            })}
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      className="py-2 px-3 sm:px-4 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-gray-700 transition-all"
+    >
+      <div className="flex items-center space-x-2 sm:space-x-3">
+        <div className="w-6 h-6 sm:w-8 sm:h-8 relative flex-shrink-0">
+          <img
+            src={Image}
+            alt={skill_name}
+            className="object-contain w-full h-full"
+          />
         </div>
-      </CardBody>
-    </CardContainer>
+        <div className="min-w-0">
+          <h4 className="text-xs sm:text-sm font-semibold text-gray-200 truncate">{skill_name}</h4>
+          {des && <p className="text-[10px] sm:text-xs text-gray-400 truncate">{des}</p>}
+        </div>
+      </div>
+    </motion.div>
   );
-}
+};
+
+export default SkillCard;

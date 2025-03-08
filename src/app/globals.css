@@ -80,4 +80,43 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
-  
+
+@keyframes gradient {
+  0% { background-position: 0% 50%;
+}
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+.gradient-text {
+  background-size: 200% auto;
+  animation: gradient 4s linear infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0d0d0d] text-white antialiased;
+  }
+}
+
+::selection {
+  @apply bg-purple-500/20 text-white;
+}
+
+::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20;
+}
+ 
