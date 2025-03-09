@@ -140,10 +140,10 @@ export default function ContactInput() {
           >
             <motion.input
               ref={emailRef}
-              className="w-full rounded-lg border border-purple-800/30 bg-transparent px-4 py-3 outline-none ring-purple-500/30 focus:ring transition-all duration-300"
+              className="w-full rounded-lg border placeholder:opacity-80 border-purple-800/30 bg-transparent px-4 py-3 outline-none ring-purple-500/30 focus:ring transition-all duration-300"
               id="email"
               type="email"
-              placeholder="you@example.com"
+              placeholder="// you@example.com"
               required
               onFocus={() => setFocused("email")}
               onBlur={() => setFocused(null)}
@@ -183,11 +183,11 @@ export default function ContactInput() {
           >
             <motion.input
               ref={nameRef}
-              className="w-full rounded-lg border  bg-transparent border-purple-800/30 px-4 py-3 outline-none ring-purple-500/30 focus:ring transition-all duration-300"
+              className="w-full rounded-lg border placeholder:opacity-80 bg-transparent border-purple-800/30 px-4 py-3 outline-none ring-purple-500/30 focus:ring transition-all duration-300"
               id="subject"
               type="text"
               required
-              placeholder="John Doe"
+              placeholder="// Enter your name"
               onFocus={() => setFocused("name")}
               onBlur={() => setFocused(null)}
               disabled={loading}
@@ -265,7 +265,7 @@ export default function ContactInput() {
             whileTap={{ scale: 0.98 }}
           >
             <AnimatePresence mode="wait">
-              {!loading ? (
+              {loading ? (
                 <motion.div
                   key="loading"
                   className="flex items-center justify-center gap-2"
