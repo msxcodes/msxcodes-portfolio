@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full text-gray-200 pb-4 z-50 relative">
+    <footer className="w-screen border-5 text-gray-200 pb-4 z-50 relative">
       <div className="w-full border-b border-purple-900/20 mb-4">
         <div className="w-full mx-auto">
           <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>

@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Remove this debugging border that's causing the white screen issue */
+/* * {
+  border: 1px solid red;
+} */
+
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }

@@ -6,7 +6,7 @@ import Projects from "@/components/projects/project-section";
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="w-screen mx-auto">
       <Hero />
       <Skills />
       <Projects />

@@ -26,6 +26,7 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
       </head>
       <body
         className={`${inter.className} bg-black overflow-y-scroll overflow-x-hidden`}
@@ -33,7 +34,9 @@ export default function RootLayout({
         <NextUIProvider>
           <StarsCanvas />
           <Toaster />
-          {children}
+          <div className="max-w-[100vw] overflow-hidden">
+            {children}
+          </div>
         </NextUIProvider>
       </body>
     </html>

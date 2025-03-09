@@ -59,7 +59,7 @@ export default function Header() {
       <motion.div
         initial="hidden"
         animate="visible"
-        className={`fixed top-0 w-full z-[100] transition-all duration-300 ${isScrolled ? "bg-black/10 backdrop-blur-md border-b border-white/5" : "bg-transparent"
+        className={`fixed top-0 w-screen z-[100] transition-all duration-300 ${isScrolled ? "bg-black/10 backdrop-blur-md border-b border-white/5" : "bg-transparent"
           }`}
       >
         <div className="mx-auto px-4 sm:px-6 lg:px-16 h-16">
@@ -95,8 +95,8 @@ export default function Header() {
                     key={item.id}
                     href={`#${item.id}`}
                     className={`relative px-4 py-2 rounded-full text-sm transition-all duration-300 ${isActive === item.id
-                        ? "text-white font-bold"
-                        : "text-gray-300 hover:text-white font-bold"
+                      ? "text-white font-bold"
+                      : "text-gray-300 hover:text-white font-bold"
                       }`}
                   >
                     {isActive === item.id && (
@@ -194,8 +194,8 @@ export default function Header() {
                       href={`#${item.id}`}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${isActive === item.id
-                          ? "bg-gradient-to-r from-purple-500/20 to-cyan-500/20 text-white"
-                          : "text-gray-300 hover:bg-white/5"
+                        ? "bg-gradient-to-r from-purple-500/20 to-cyan-500/20 text-white"
+                        : "text-gray-300 hover:bg-white/5"
                         }`}
                     >
                       {item.label}
