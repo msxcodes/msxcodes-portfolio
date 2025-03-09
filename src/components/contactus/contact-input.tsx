@@ -260,12 +260,12 @@ export default function ContactInput() {
           <Button
             borderRadius="1.5rem"
             disabled={loading}
-            className="bg-transparent text-white text-[0.9rem] border-[#7042f88b] gradient-text group relative overflow-hidden"
+            className="bg-transparent w-max px-3 text-white text-[0.9rem] border-[#7042f88b] gradient-text group relative overflow-hidden"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
             <AnimatePresence mode="wait">
-              {loading ? (
+              {!loading ? (
                 <motion.div
                   key="loading"
                   className="flex items-center justify-center gap-2"
@@ -279,7 +279,7 @@ export default function ContactInput() {
                     transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                   ></motion.div>
                   <span className="ml-2 font-medium gradient-text">
-                    await send()
+                    sending()
                   </span>
                 </motion.div>
               ) : submitted ? (

@@ -13,8 +13,8 @@ const Hero = () => {
         loop
         playsInline
         className="rotate-180 absolute 
-          top-[-200px] sm:top-[-150px] md:top-[-250px] lg:top-[-350px] xl:top-[-400px]
-          opacity-40 h-[35%] md:w-full md:h-full object-cover"
+          top-[-150px] sm:top-[-150px] md:top-[-250px] lg:top-[-350px] xl:top-[-400px]
+          opacity-40 h-[35%] md:w-full md:h-full object-cover z-50"
       >
         <source src="/blackhole.webm" type="video/webm" />
       </video>

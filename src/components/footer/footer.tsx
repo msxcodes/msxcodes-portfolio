@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-screen border-5 text-gray-200 pb-4 z-50 relative">
+    <footer className="w-screen text-gray-200 pb-24 md:pb-4 z-50 relative">
       <div className="w-full border-b border-purple-900/20 mb-4">
         <div className="w-full mx-auto">
           <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
@@ -22,22 +22,22 @@ const Footer = () => {
 
         <div className="flex flex-col items-center">
           <div className="flex space-x-6 mb-2">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <Link href="https://github.com/msxcodes" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <div className="text-gray-400 hover:text-purple-500 transition-colors">
                 <FaGithub size={18} />
               </div>
             </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <Link href="https://twitter.com/msxcodes" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <div className="text-gray-400 hover:text-purple-500 transition-colors">
                 <FaTwitter size={18} />
               </div>
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <Link href="https://linkedin.com/in/msxcodes" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <div className="text-gray-400 hover:text-purple-500 transition-colors">
                 <FaLinkedin size={18} />
               </div>
             </Link>
-            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <Link href="https://instagram.com/msxcodes" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <div className="text-gray-400 hover:text-purple-500 transition-colors">
                 <FaInstagram size={18} />
               </div>

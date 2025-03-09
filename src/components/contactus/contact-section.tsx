@@ -117,7 +117,7 @@ export default function ContactUs() {
       </div>
 
       <div className="h-full w-[90%] absolute">
-        <div className="w-full h-full z-[10] opacity-20 absolute flex items-center justify-center bg-cover">
+        <div className="w-full h-full z-20 opacity-20 absolute flex items-center justify-center bg-cover">
           <video
             className="w-full h-auto"
             preload="false"

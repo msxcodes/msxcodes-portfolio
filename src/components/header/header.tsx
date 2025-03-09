@@ -9,18 +9,18 @@ import {
   slideInFromTop,
 } from "@/utils/motions/montion";
 import Link from "next/link";
-import { RiTerminalBoxFill, RiCodeBoxLine, RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { RiTerminalBoxFill, RiCodeBoxLine } from "react-icons/ri";
+import { RiHome4Line, RiCodeSSlashLine, RiProjector2Line, RiMailLine } from "react-icons/ri";
 
 export default function Header() {
   const [isActive, setIsActive] = useState<string>("about-me");
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { id: "about-me", label: "About" },
-    { id: "skills", label: "Skills" },
-    { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
+    { id: "about-me", label: "About", icon: <RiHome4Line className="w-5 h-5" /> },
+    { id: "skills", label: "Skills", icon: <RiCodeSSlashLine className="w-5 h-5" /> },
+    { id: "projects", label: "Projects", icon: <RiProjector2Line className="w-5 h-5" /> },
+    { id: "contact", label: "Contact", icon: <RiMailLine className="w-5 h-5" /> },
   ];
 
   useEffect(() => {
@@ -40,19 +40,6 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Close mobile menu when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (isMobileMenuOpen && !target.closest('#mobile-menu') && !target.closest('#menu-button')) {
-        setIsMobileMenuOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [isMobileMenuOpen]);
 
   return (
     <>
@@ -112,7 +99,7 @@ export default function Header() {
               </div>
             </motion.nav>
 
-            {/* Social Links & Mobile Menu Button */}
+            {/* Social Links */}
             <div className="flex items-center gap-4">
               <motion.div
                 variants={slideInFromRight(0.5)}
@@ -149,85 +136,55 @@ export default function Header() {
                 </div>
               </motion.div>
 
-              {/* Mobile Menu Button */}
-              <button
-                id="menu-button"
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 rounded-lg bg-black/20 backdrop-blur-sm border border-white/10 md:hidden"
-              >
-                {isMobileMenuOpen ? (
-                  <RiCloseLine className="w-6 h-6 text-gray-300" />
-                ) : (
-                  <RiMenu3Line className="w-6 h-6 text-gray-300" />
-                )}
-              </button>
+              {/* Mobile Social Links */}
+              <div className="flex md:hidden items-center gap-2">
+                {SocialHandles.map((social) => (
+                  <Link
+                    href={social.link}
+                    key={social.name}
+                    target="_blank"
+                    className="group relative"
+                  >
+                    <div className="relative p-1 rounded-full border border-white/20 bg-black/30 backdrop-blur-sm">
+                      <Image
+                        src={social.src}
+                        alt={social.name}
+                        width={16}
+                        height={16}
+                        className="opacity-80"
+                      />
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </motion.div>
 
-      {/* Mobile Menu Overlay */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] md:hidden"
-              onClick={() => setIsMobileMenuOpen(false)}
-            />
-
-            <motion.div
-              id="mobile-menu"
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "tween", duration: 0.3 }}
-              className="fixed right-0 top-0 bottom-0 w-[280px] bg-gray-900/95 backdrop-blur-md border-l border-white/10 z-[100] md:hidden"
+      {/* Mobile Bottom Navigation */}
+      <div className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-black/30 backdrop-blur-md border-t border-white/10">
+        <div className="flex justify-around items-center h-16">
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              className={`flex flex-col items-center justify-center w-full h-full ${isActive === item.id
+                ? "text-purple-400"
+                : "text-gray-400"
+                }`}
             >
-              <div className="flex flex-col h-full p-6">
-                <div className="flex flex-col gap-4 mt-16">
-                  {navItems.map((item) => (
-                    <a
-                      key={item.id}
-                      href={`#${item.id}`}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${isActive === item.id
-                        ? "bg-gradient-to-r from-purple-500/20 to-cyan-500/20 text-white"
-                        : "text-gray-300 hover:bg-white/5"
-                        }`}
-                    >
-                      {item.label}
-                    </a>
-                  ))}
-                </div>
-
-                <div className="mt-auto">
-                  <div className="flex flex-wrap gap-3 pt-6 border-t border-white/10">
-                    {SocialHandles.map((social) => (
-                      <Link
-                        href={social.link}
-                        key={social.name}
-                        target="_blank"
-                        className="p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors duration-300"
-                      >
-                        <Image
-                          src={social.src}
-                          alt={social.name}
-                          width={20}
-                          height={20}
-                          className="opacity-70"
-                        />
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+              <div className={`${isActive === item.id
+                ? "bg-gradient-to-r from-purple-500/20 to-cyan-500/20 p-2 rounded-full"
+                : ""
+                }`}>
+                {item.icon}
               </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+              <span className="text-xs mt-1">{item.label}</span>
+            </a>
+          ))}
+        </div>
+      </div>
     </>
   );
 }
